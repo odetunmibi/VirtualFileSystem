@@ -66,12 +66,34 @@ class VirtualFileSystem:
         
     # ls command
     def get_files_in_current_directory(self):
-        return self.currentDirectory
+        return self.helper_display_dict(self.currentDirectory)
 
     # help command
     def get_help_log(self):
         helpMessage = "commands:\n    ls           list all directories and files in the current directory.\n    mkdir        create a new directory.\n    cd           step into a directory.\n    touch        create a new file.\n    exit         exit the virtual file system."
         return helpMessage
+
+    def helper_print_nested_dict(self, dict_obj, indent = 0):
+        ''' Pretty Print nested dictionary with given indent level  
+        '''
+        # Iterate over all key-value pairs of dictionary
+        for key, value in dict_obj.items():
+            # If value is dict type, then print nested dict 
+            if isinstance(value, dict):
+                print(' ' * indent, key, ':', '{')
+                self.helper_print_nested_dict(value, indent + 4)
+                print(' ' * indent, '}')
+            else:
+                print(' ' * indent, key, ':', value)
+
+
+    def helper_display_dict(self, dict_obj):
+        ''' Pretty print nested dictionary
+        '''
+        print('{')
+        self.helper_print_nested_dict(dict_obj, 4)
+        print('}')
+
 
 
 
