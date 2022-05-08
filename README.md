@@ -4,14 +4,14 @@
   
   help
 
-<br /> commands:
+&nbsp;<br /> commands:
 
 <br />   &nbsp;  ls           list all directories and files in the current directory.
  
- <br />   mkdir        create a new directory.
+ <br /> &nbsp;&nbsp;   mkdir        create a new directory.
   
-  <br />   cd           step into a directory.
+  <br /> &nbsp;&nbsp;  cd           step into a directory.
   
-  <br />   touch        create a new file.
+  <br /> &nbsp;&nbsp;  touch        create a new file.
  
- <br />  exit         exit the virtual file system.
+ <br /> &nbsp;&nbsp; exit         exit the virtual file system.
