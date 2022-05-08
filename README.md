@@ -3,9 +3,15 @@
 ### Type help command 
   
   help
-commands:
+
+<br /> commands:
+
 <br />   &nbsp;  ls           list all directories and files in the current directory.
-    mkdir        create a new directory.
-    cd           step into a directory.
-    touch        create a new file.
-    exit         exit the virtual file system.
+ 
+ <br />   mkdir        create a new directory.
+  
+  <br />   cd           step into a directory.
+  
+  <br />   touch        create a new file.
+ 
+ <br />  exit         exit the virtual file system.
